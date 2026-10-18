@@ -1,0 +1,91 @@
+{
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "dataset": "12 fictional invoices; 8 fixed paraphrases; unpaid filter",
+  "scope": "Handwritten synthetic smoke test, not a representative production benchmark.",
+  "startup_seconds": 2.25,
+  "cases": [
+    {
+      "query": "building an online shop",
+      "expected": "INV-2601",
+      "semantic_top1": "INV-2601",
+      "cosine_similarity": 0.5503,
+      "query_ms": 69.58,
+      "semantic_correct": true,
+      "keyword_overlap_top1": "INV-2601",
+      "keyword_overlap_correct": true
+    },
+    {
+      "query": "logo and brand identity",
+      "expected": "INV-2602",
+      "semantic_top1": "INV-2602",
+      "cosine_similarity": 0.5154,
+      "query_ms": 30.57,
+      "semantic_correct": true,
+      "keyword_overlap_top1": "INV-2602",
+      "keyword_overlap_correct": true
+    },
+    {
+      "query": "product photos for a catalog",
+      "expected": "INV-2610",
+      "semantic_top1": "INV-2610",
+      "cosine_similarity": 0.4716,
+      "query_ms": 97.76,
+      "semantic_correct": true,
+      "keyword_overlap_top1": "INV-2601",
+      "keyword_overlap_correct": false
+    },
+    {
+      "query": "film for a new backpack",
+      "expected": "INV-2605",
+      "semantic_top1": "INV-2605",
+      "cosine_similarity": 0.5987,
+      "query_ms": 60.47,
+      "semantic_correct": true,
+      "keyword_overlap_top1": "INV-2605",
+      "keyword_overlap_correct": true
+    },
+    {
+      "query": "ads on social networks",
+      "expected": "INV-2607",
+      "semantic_top1": "INV-2607",
+      "cosine_similarity": 0.5049,
+      "query_ms": 25.36,
+      "semantic_correct": true,
+      "keyword_overlap_top1": "INV-2602",
+      "keyword_overlap_correct": false
+    },
+    {
+      "query": "combine spreadsheets automatically",
+      "expected": "INV-2609",
+      "semantic_top1": "INV-2609",
+      "cosine_similarity": 0.3978,
+      "query_ms": 20.55,
+      "semantic_correct": true,
+      "keyword_overlap_top1": "INV-2601",
+      "keyword_overlap_correct": false
+    },
+    {
+      "query": "website backups and security updates",
+      "expected": "INV-2604",
+      "semantic_top1": "INV-2604",
+      "cosine_similarity": 0.396,
+      "query_ms": 33.34,
+      "semantic_correct": true,
+      "keyword_overlap_top1": "INV-2604",
+      "keyword_overlap_correct": true
+    },
+    {
+      "query": "clean up a podcast recording",
+      "expected": "INV-2611",
+      "semantic_top1": "INV-2611",
+      "cosine_similarity": 0.5837,
+      "query_ms": 18.44,
+      "semantic_correct": true,
+      "keyword_overlap_top1": "INV-2601",
+      "keyword_overlap_correct": false
+    }
+  ],
+  "semantic_top1_correct": 8,
+  "keyword_overlap_top1_correct": 4,
+  "total": 8
+}

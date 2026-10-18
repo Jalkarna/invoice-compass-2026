@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: invoice-compass-2026
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt && python -m invoice_compass.warm_model
+    startCommand: uvicorn invoice_compass.web:app --host 0.0.0.0 --port $PORT --workers 1
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.11
+      - key: INVOICE_COMPASS_DEMO
+        value: "1"
+      - key: INVOICE_COMPASS_MODEL_CACHE
+        value: .cache/fastembed

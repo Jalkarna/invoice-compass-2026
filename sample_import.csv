@@ -1,0 +1,2 @@
+id,client,description,amount,currency,due_date,status,tags
+MY-001,Example client,Website redesign and booking calendar,12000.00,INR,2026-11-05,unpaid,website;booking
