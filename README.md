@@ -14,6 +14,8 @@ Built from a new repository on October 18, 2026 for the Hacktoberfest Week 2 **S
 - A deterministic follow-up draft that you review and copy. The app does not send messages.
 - A read-only public demo and an import-enabled local mode.
 
+[Try the read-only demo on Render](https://invoice-compass-2026.onrender.com/). Free instances can take about a minute to wake.
+
 ![Invoice Compass desktop](docs/desktop.png)
 
 ## Run it on your computer

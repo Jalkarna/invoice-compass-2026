@@ -28,5 +28,13 @@
       "horizontal_overflow": false
     }
   },
-  "data": "All invoices and clients in these checks are fictional."
+  "data": "All invoices and clients in these checks are fictional.",
+  "public_deployment": {
+    "url": "https://invoice-compass-2026.onrender.com/",
+    "health_status": "ready",
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
+    "demo": true,
+    "import_http_status": 403,
+    "instance": "Render Free ($0/month)"
+  }
 }
