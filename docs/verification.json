@@ -1,0 +1,32 @@
+{
+  "verified_at": "2026-10-18T13:17:57.291181+00:00",
+  "unit_tests": {
+    "passed": 10,
+    "uses_real_embeddings": true
+  },
+  "browser": {
+    "semantic_query": "product photos for a catalog",
+    "top_invoice": "INV-2610, Olive Workshop",
+    "currency_filter": {
+      "currency": "USD",
+      "query": "combine spreadsheets automatically",
+      "result": "INV-2609, North Star Analytics, $320.00"
+    },
+    "empty_state": {
+      "currency": "GBP",
+      "shown": true
+    },
+    "local_csv_import": {
+      "before": 12,
+      "after": 13,
+      "duplicate_rejected": true,
+      "count_after_duplicate": 13
+    },
+    "mobile": {
+      "viewport_width": 390,
+      "document_width": 390,
+      "horizontal_overflow": false
+    }
+  },
+  "data": "All invoices and clients in these checks are fictional."
+}

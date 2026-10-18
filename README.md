@@ -14,6 +14,8 @@ Built from a new repository on October 18, 2026 for the Hacktoberfest Week 2 **S
 - A deterministic follow-up draft that you review and copy. The app does not send messages.
 - A read-only public demo and an import-enabled local mode.
 
+![Invoice Compass desktop](docs/desktop.png)
+
 ## Run it on your computer
 
 Requires Python 3.12.
@@ -61,6 +63,8 @@ Local imports are saved to `.data/invoices.json` with owner-only file permission
 ```
 
 The initial run passed **10 tests**, including real model retrieval, CSV persistence, atomic duplicate rejection, invalid monetary values, currency separation and public-demo import protection.
+
+Browser checks exercised semantic search, the USD filter, an empty result, CSV import and duplicate rejection through the real API/model. The 390 px mobile layout has no horizontal overflow. See `docs/verification.json` and [the mobile screenshot](docs/mobile.png).
 
 `benchmark-results.json` records a fixed smoke test of eight paraphrases against 12 fictional invoices. On the development machine:
 
